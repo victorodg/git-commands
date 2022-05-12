@@ -97,6 +97,12 @@ description-test
     - envia e salva as alterações no repositório remoto, no branch “develop”
 - git push -u origin develop
     - faz upload de um branch “develop” novo
+    
+## git reset
+    
+- git reset --hard <remote>/<branch>
+    
+- deixa o repositório local igual ao remoto
 
 ## git revert
 
