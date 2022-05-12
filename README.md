@@ -102,7 +102,7 @@ description-test
     
 - git reset --hard <remote>/<branch>
     
-- deixa o repositório local igual ao remoto
+    - deixa o repositório local igual ao remoto
 
 ## git revert
 
