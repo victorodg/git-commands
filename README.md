@@ -1,6 +1,3 @@
-# hello-world
-description-test
-
 # Comandos
 
 ## git config
