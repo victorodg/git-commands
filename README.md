@@ -161,6 +161,12 @@ description-test
 - First item
 - Second item
 - Third item
+    
+\- First item
+
+\- Second item
+    
+\- Third item
 
 ## Code
 
@@ -240,14 +246,6 @@ Here's a sentence with a footnote. \[\^1\]
 ### My Great Heading {#custom-id}
   
 \#\#\# My Great Heading \{\#custom-id\}  
-
-## Definition List
-
-term
-: definition 
-
-term
-\: definition 
 
 ## Strikethrough
 
