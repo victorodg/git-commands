@@ -273,20 +273,14 @@ That is so funny! \:joy\:
 
 See https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji
 
-## Highlighting
-
-I need to highlight these ==very important words==. 
- 
-I need to highlight these \=\=very important words\=\=.
-
 ## Subscript
 
-H~2~O
+H<sub>2</sub>O
 
-H\~2\~O
+H\<sub\>2\</sub\>O
 
 ## Superscript
 
-X^2^
+X<sup>2</sup>
 
-X\^2\^
+X\<sup\>2\</sup\>
