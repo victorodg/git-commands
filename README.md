@@ -1,3 +1,35 @@
+# Vocabulário
+
+## Git
+
+Git é um sistema distribuído open source de controle de versão.
+
+O sistema ajuda a acompanhar as atualizações feitas no código.
+
+Não há códigos sobrescritos, uma vez que o Git salva múltiplas cópias no repositório.
+
+## Repositório
+
+É um diretório onde os arquivos ficam armazenados, podendo ficar em um depósito do GitHub ou em seu computador.
+
+## Remote
+
+É o repositório remoto, armazenado nos servidores do GitHub.
+
+Tipicamente o *remote* padrão se chama *origin*.
+
+## Branch
+
+Um *branch* é uma versão do repositório que difere do projeto principal.
+
+## Commit
+
+Os *commits* são alterações salvas. Cada vez que um *branch* é alterado, deve ser feito um *commit* para manter a alteração.
+
+## Pull request
+
+É o ato de propor as mudanças que você acabou de fazer para outros desenvolvedores trabalhando no mesmo projeto.
+
 # Comandos
 
 ## git config
@@ -24,7 +56,9 @@ c = !git add --all && git commit -m
 
 - cria um atalho que atualiza o que vai no commit e aplica o commit
     
-`l = !git log --pretty=format:’%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn,%C(green)%cr’`
+```
+l = !git log --pretty=format:’%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn,%C(green)%cr’
+```
 
 - cria um atalho que customiza o comando log
 - %h: hash reduzido do commit
@@ -35,138 +69,196 @@ c = !git add --all && git commit -m
 
 ## git init
 
-`git init`
+```
+git init
+```
 
 - cria um repositório no diretório atual
 
 ## git clone
 
-`git clone https://github.com/<usuario>/<repositorio>.git`
+```
+git clone https://github.com/<usuario>/<repositorio>.git
+```
 
 - clona o branch *main* do repositório <repositorio>
 
-`git remote rm <remote>`
+```
+git remote rm <remote>
+```
 
 - desvincula o clone do repositório remoto original
 
 ## git clone --branch
 
-`cd .../<diretorio_do_repositorio>/`
+```
+cd .../<diretorio_do_repositorio>/
     
-`git clone --branch <branch>`
+git clone --branch <branch>
+```
     
 - clona o *branch* `<branch>`
 
 ## git remote
 
-`git remote add origin https://github.com/<usuario>/<repositorio>.git`
+```
+git remote add origin https://github.com/<usuario>/<repositorio>.git
+```
     
 - conecta seu repositório local a um repositório remoto
 
 ## git branch
 
-`git branch <branch>`
+```
+git branch <branch>
+```
 
 - cria o *branch* `<branch>` no repositório local
 
-`git push -u <remote> <branch>`
+```
+git push -u <remote> <branch>
+```
 
 - sobe a *branch* `<branch>` para o repositório remoto
 
-`git branch`
+```
+git branch
+```
     
 - lista as *branches* locais
 
-`git branch -a`
+```
+git branch -a
+```
 
 - lista as *branches* remotas
 
-`git branch -r`
+```
+git branch -r
+```
 
 - lista o *remote* e o *branch*
 
-`git branch -d <branch>`
+```
+git branch -d <branch>
+```
 
 - deleta a *branch* `<branch>` do repositório local
 
-`git push origin --delete <branch>`
+```
+git push origin --delete <branch>
+```
 
 - deleta a *branch* `<branch>` do repositório remoto
 
 ## git checkout
 
-`git checkout <branch>`
+```
+git checkout <branch>
+```
     
 - navega para a *branch* `<branch>`
 
-`git checkout -b <branch>`
+```
+git checkout -b <branch>
+```
     
 - cria a *branch* <branch>` e navega para ela
 
 ## git status
 
-`git status`
+```
+git status
+```
     
 - fornece informações sobre a *branch* em que estiver no momento
 
 ## git pull
 
-`git pull <remote>`
+```
+git pull <remote>
+```
     
 - obtém atualizações do repositório remoto
 
-`git pull <remote> <branch>`
+```
+git pull <remote> <branch>
+```
     
 - obtém atualizações de uma *branch* específica do repositório remoto
 
 ## git add
 
-`git add <arquivo>`
+```
+git add <arquivo>
+```
  
 - inclui as alterações de um arquivo em nosso próximo *commit*
 
-`git add --all ou git add .`
+```
+git add --all ou git add .
+```
     
 - adiciona todos os arquivos modificados em nosso próximo *commit*
 
 ## git commit
 
-`git commit -m “mensagem explicando a mudança no código”`
+```
+git commit -m “mensagem explicando a mudança no código”
+```
 
 - define um ponto de verificação para o qual você pode voltar mais tarde se necessário
 
 ## git push
 
-`git push <remote> <branch>`
+```
+git push <remote> <branch>
+```
     
 - envia e salva as alterações no repositório remoto, na *branch* `<branch>`
 
-`git push -u <remote> <branch>`
+```
+git push -u <remote> <branch>
+```
 
 - faz upload de um *branch* novo
     
 ## git reset
     
-`git reset --hard <remote>/<branch>`
+```
+git reset --hard <remote>/<branch>
+```
     
 - deixa o repositório local igual ao remoto, como se estivesse refazendo o `git clone`
 
 ## git revert
 
-- git log -- oneline
-    - obtém o número do hash
-- git revert ‘número do hash’
-    - desfaz a alteração local ou remotamente
+```
+git log --oneline
+```
+
+- obtém o número do hash
+
+```
+git revert <número_do_hash>
+```
+
+- desfaz a alteração local ou remotamente
 
 ## git merge
 
-- git merge main develop
-    - mescla as atualizações no branch “develop” ao branch “main” (”develop” não sofrerá alterações)
+```
+git merge <branch_receptor> <branch_doador>
+```
+  
+- mescla as atualizações no *branch* `<branch_doador>` ao branch `<branch_receptor>` (`<branch_doador>` não sofrerá alterações)
 
 ## configurar git com vscode
 
-- git config --global core.editor ‘code --wait’
-- git config --global -e
+```
+git config --global core.editor ‘code --wait’
+git config --global -e
+```
 
 ---
 
