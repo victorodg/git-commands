@@ -30,6 +30,8 @@ Os *commits* são alterações salvas. Cada vez que um *branch* é alterado, dev
 
 É o ato de propor as mudanças que você acabou de fazer para outros desenvolvedores trabalhando no mesmo projeto.
 
+---
+
 # Comandos
 
 ## git config
