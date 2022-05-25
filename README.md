@@ -155,7 +155,7 @@ git push origin --delete <branch>
 
 ```
 git branch -m <oldname> <newname>
-
+```
 
 ## git checkout
 
