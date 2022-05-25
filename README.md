@@ -153,6 +153,10 @@ git push origin --delete <branch>
 
 - deleta a *branch* `<branch>` do repositório remoto
 
+```
+git branch -m <oldname> <newname>
+
+
 ## git checkout
 
 ```
