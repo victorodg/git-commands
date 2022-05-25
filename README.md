@@ -157,6 +157,8 @@ git push origin --delete <branch>
 git branch -m <oldname> <newname>
 ```
 
+- renomeia a branch
+
 ## git checkout
 
 ```
